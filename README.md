@@ -1,3 +1,13 @@
+# record rostopic using rosbag
+  - record all topic
+~~~
+$ rosbag $filename -a
+~~~
+  - record subset of topic
+~~~
+$ rosbag record -O $filename /turtle/command_velocity /turtle/pose
+~~~
+
 # rosbag_to_csv
 
 A GUI tool to convert topics from a rosbag file to csv files
